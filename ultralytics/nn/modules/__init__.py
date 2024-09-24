@@ -53,6 +53,9 @@ from .block import (
     RepVGGDW,
     ResNetLayer,
     SCDown,
+    SEAttention,
+    EMA,
+    space_to_depth,
 )
 from .conv import (
     CBAM,
@@ -69,7 +72,16 @@ from .conv import (
     RepConv,
     SpatialAttention,
 )
-from .head import OBB, Classify, Detect, Pose, RTDETRDecoder, Segment, WorldDetect, v10Detect
+from .head import (
+    OBB,
+    Classify,
+    Detect,
+    Pose,
+    RTDETRDecoder,
+    Segment,
+    WorldDetect,
+    v10Detect,
+)
 from .transformer import (
     AIFI,
     MLP,
@@ -150,4 +162,7 @@ __all__ = (
     "Attention",
     "PSA",
     "SCDown",
+    "SEAttention",
+    "EMA",
+    "space_to_depth",
 )
